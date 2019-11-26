@@ -1,0 +1,36 @@
+EXP: 'exp25_fold3_lstm'
+
+# dgx2
+# DIRS:
+#   DATA: '/data/rsna/'
+#   OUTPUTS: '/data/nghia/pytorch-dl-starter/outputs/'
+#   WEIGHTS: '/data/nghia/pytorch-dl-starter/weights/'
+
+SYSTEM:
+  SEED: 1996
+  NUM_WORKERS: 8
+
+DATA:
+  IMG_SIZE: 512
+  INP_CHANNEL: 3
+  RSNA1: ['brain', 'subdural', 'tissue']
+  # RSNA1: ['default', 'subdural', 'tissue']
+  ONE_SITE: True
+  SUB_TYPE_HEAD: True
+  AUGMENT_PER_CHANNEL: False
+  CUTMIX_PROB: 0.0
+  N_SLICES: 20
+
+OPT:
+  GD_STEPS: 8
+  BASE_LR: 1e-4
+
+TRAIN: 
+  MODEL: 'octave-resnet50-lstm'
+  FOLD: 3
+  BATCH_SIZE: 8
+  EPOCHS: 20
+  CRNN: True
+  DROPOUT: 0.3
+  CNN_W: 'best_exp25_fold3'
+  BIDIRECTIONAL: True
