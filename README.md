@@ -1,6 +1,6 @@
 # RSNA 2019 13th place solution
 
-Credit: [@andy2709](https://github.com/orgs/vhvddm/people/nhannguyen2709), [lego1st](https://github.com/Lego1st), [DungNB](https://github.com/orgs/vhvddm/people/dungnb1333), [DatNT](https://github.com/moewiee) 
+Credit: [@andy2709](https://github.com/nhannguyen2709), [lego1st](https://github.com/Lego1st), [DungNB](https://github.com/dungnb1333), [DatNT](https://github.com/moewiee) 
 
 ## Instruction
 
